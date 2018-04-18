@@ -1,7 +1,7 @@
 FROM postgres:10.3
 
 RUN apt-get update \
-  && for POSTGIS_VERSION in 2.4.4; do \
+  && for POSTGIS_VERSION in 2.4; do \
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y \
     postgresql-contrib \
     postgresql-$PG_MAJOR-postgis-$POSTGIS_VERSION \
