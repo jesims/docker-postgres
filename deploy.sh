@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-proj="postgres"
+proj="docker-postgres"
 ver=$(cat Dockerfile | head -n 1 | awk -F: '{print $2}')
 ver=${ver:-latest}
 echo "Building $proj:$ver container"
